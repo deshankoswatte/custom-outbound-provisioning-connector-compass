@@ -9,7 +9,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.custom.outbound.provisioning.connector.compass</groupId>
+    <groupId>org.wso2.custom.outbound.provisioning.connector</groupId>
     <artifactId>custom-outbound-provisioning-connector-compass</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -25,7 +25,7 @@
     </scm>
 
     <modules>
-        <module>components/org.wso2.custom.provisioning.connector.compass</module>
+        <module>components/org.wso2.custom.outbound.provisioning.connector.compass</module>
     </modules>
 
     <dependencyManagement>

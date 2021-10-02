@@ -1,4 +1,4 @@
-package org.wso2.custom.provisioning.connector.compass.internal;
+package org.wso2.custom.outbound.provisioning.connector.compass.internal;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -13,7 +13,8 @@ import org.osgi.service.component.annotations.ReferencePolicy;
 import org.wso2.carbon.identity.governance.IdentityGovernanceService;
 
 /**
- * OSGi service component which registers the compass outbound provisioning connector and sets the bundle context.
+ * OSGi service component which registers the custom compass outbound provisioning connector and sets the bundle
+ * context.
  */
 @Component(name =
         "org.wso2.custom.provisioning.connector.compass.internal.CompassOutboundProvisioningConnectorMgtComponent",

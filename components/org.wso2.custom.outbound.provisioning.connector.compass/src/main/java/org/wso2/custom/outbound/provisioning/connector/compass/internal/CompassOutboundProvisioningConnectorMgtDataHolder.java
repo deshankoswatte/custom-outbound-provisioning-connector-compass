@@ -1,10 +1,10 @@
-package org.wso2.custom.provisioning.connector.compass.internal;
+package org.wso2.custom.outbound.provisioning.connector.compass.internal;
 
 import org.osgi.framework.BundleContext;
 import org.wso2.carbon.identity.governance.IdentityGovernanceService;
 
 /**
- * Data holder for the compass custom outbound provisioning connector.
+ * Data holder for the custom compass outbound provisioning connector.
  */
 public class CompassOutboundProvisioningConnectorMgtDataHolder {
 
