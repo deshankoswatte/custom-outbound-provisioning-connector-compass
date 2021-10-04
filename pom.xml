@@ -9,7 +9,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.custom.outbound.provisioning.connector.compass</groupId>
+    <groupId>org.wso2.custom.outbound.provisioning.connector</groupId>
     <artifactId>custom-outbound-provisioning-connector-compass</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -25,7 +25,7 @@
     </scm>
 
     <modules>
-        <module>components/org.wso2.custom.provisioning.connector.compass</module>
+        <module>components/org.wso2.custom.outbound.provisioning.connector.compass</module>
     </modules>
 
     <dependencyManagement>
@@ -34,6 +34,11 @@
                 <groupId>org.wso2.carbon.identity.framework</groupId>
                 <artifactId>org.wso2.carbon.identity.provisioning</artifactId>
                 <version>${carbon.identity.framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon.identity.governance</groupId>
+                <artifactId>org.wso2.carbon.identity.governance</artifactId>
+                <version>${carbon.identity.governance.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-lang</groupId>
@@ -62,6 +67,8 @@
         <!--Component Versions-->
         <carbon.identity.framework.version>5.18.187</carbon.identity.framework.version>
         <carbon.identity.framework.version.range>[5.14.67, 6.0.0]</carbon.identity.framework.version.range>
+        <carbon.identity.governance.version>1.4.72</carbon.identity.governance.version>
+        <identity.governance.imp.pkg.version.range>[1.3.0, 2.0.0)</identity.governance.imp.pkg.version.range>
         <!--Commons Versions-->
         <commons.lang.version>2.6</commons.lang.version>
         <commons.lang.wso2.version>2.6.0.wso2v1</commons.lang.wso2.version>

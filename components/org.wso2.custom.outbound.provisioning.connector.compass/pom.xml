@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>org.wso2.custom.outbound.provisioning.connector.compass</groupId>
+        <groupId>org.wso2.custom.outbound.provisioning.connector</groupId>
         <artifactId>custom-outbound-provisioning-connector-compass</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>org.wso2.custom.provisioning.connector.compass</artifactId>
+    <artifactId>org.wso2.custom.outbound.provisioning.connector.compass</artifactId>
     <packaging>bundle</packaging>
     <name>WSO2 Custom - Outbound Provisioning Connector for Compass</name>
     <description>This module contains the implementation of the custom outbound provisioning connector built for Compass
@@ -21,6 +21,10 @@
         <dependency>
             <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.provisioning</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.governance</groupId>
+            <artifactId>org.wso2.carbon.identity.governance</artifactId>
         </dependency>
         <dependency>
             <groupId>commons-lang</groupId>
@@ -59,8 +63,7 @@
                         </Import-Package>
                         <Export-Package>
                             !org.wso2.custom.outbound.provisioning.connector.compass.internal,
-                            org.wso2.custom.outbound.provisioning.connector.compass.*;
-                            version="${project.version}"
+                            org.wso2.custom.outbound.provisioning.connector.compass.*,
                         </Export-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
                     </instructions>
